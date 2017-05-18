@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.FXMLAstuceClientController">
+   <children>
+      <TableView fx:id="table_astuce" prefHeight="600.0" prefWidth="124.0">
+         <columns>
+            <TableColumn fx:id="Ctitre" prefWidth="123.0" text="liste jeu" />
+         </columns>
+      </TableView>
+      <Label fx:id="GameTitre" layoutX="218.0" layoutY="39.0" prefHeight="37.0" prefWidth="418.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Text fx:id="test" layoutX="304.0" layoutY="434.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="541.13671875" />
+      <ImageView fx:id="imgVw" fitHeight="225.0" fitWidth="301.0" layoutX="427.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/_RC/cellrenderer/blank.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="254.0" layoutY="386.0" prefHeight="20.0" prefWidth="154.0" text="Description :" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSearch" alignment="CENTER" layoutX="843.0" layoutY="24.0" prefHeight="30.0" prefWidth="228.0" promptText="Search...">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="AstuceTitre" layoutX="304.0" layoutY="107.0" prefHeight="37.0" prefWidth="298.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="1009.0" layoutY="543.0" mnemonicParsing="false" onAction="#GotoGameclient" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #263968;" text="page des jeux" textFill="WHITE" />
+   </children>
+</AnchorPane>

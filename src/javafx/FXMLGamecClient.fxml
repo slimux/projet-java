@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.FXMLGamecClientController">
+   <children>
+      <TableView fx:id="table_jeu" prefHeight="600.0" prefWidth="124.0">
+         <columns>
+            <TableColumn fx:id="Ctitre_jeu" prefWidth="123.0" text="liste jeu" />
+         </columns>
+      </TableView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="458.0" layoutY="120.0" prefHeight="20.0" prefWidth="154.0" style="-fx-background-color: #263968;" text="REDACTION" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="GameTitre" layoutX="211.0" layoutY="62.0" prefHeight="37.0" prefWidth="418.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgVw" fitHeight="225.0" fitWidth="196.0" layoutX="211.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/_RC/cellrenderer/blank.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="621.0" layoutY="120.0" prefHeight="20.0" prefWidth="154.0" style="-fx-background-color: #263968;" text="LECTEURS" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="note_redaction" contentDisplay="CENTER" layoutX="528.0" layoutY="153.0" prefHeight="17.0" prefWidth="95.0" />
+      <Label fx:id="note_lecteur" layoutX="692.0" layoutY="153.0" prefHeight="17.0" prefWidth="95.0" textAlignment="CENTER" />
+      <GridPane layoutX="464.0" layoutY="202.0" prefHeight="152.0" prefWidth="331.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="editeur" prefHeight="17.0" prefWidth="159.0" GridPane.columnIndex="1" />
+            <Label fx:id="date" prefHeight="17.0" prefWidth="173.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="genre" prefHeight="17.0" prefWidth="155.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="158.0" text="Editeur(s) / Développeur(s) :" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="154.0" text="date Sortie:" underline="true" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="154.0" text="Genre(s) :" underline="true" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="154.0" text="Platforme:" underline="true" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="platforme" prefHeight="17.0" prefWidth="143.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="181.0" layoutY="397.0" prefHeight="20.0" prefWidth="154.0" text="Description :" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Text fx:id="test" layoutX="230.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="645.13671875" />
+      <Separator layoutX="449.0" layoutY="176.0" prefHeight="8.0" prefWidth="500.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="784.0" layoutY="120.0" prefHeight="20.0" prefWidth="154.0" style="-fx-background-color: #263968;" text="LE PRIX" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="prix" contentDisplay="CENTER" layoutX="854.0" layoutY="153.0" prefHeight="17.0" prefWidth="95.0" />
+      <Button layoutX="1013.0" layoutY="544.0" mnemonicParsing="false" onAction="#GotoAstuceclient" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #263968;" text="page des astuces" textFill="WHITE" />
+      <Button layoutX="163.0" layoutY="550.0" mnemonicParsing="false" onAction="#Gotoformulaire" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #263968;" text="contacter nous !" textFill="WHITE" />
+   </children>
+</AnchorPane>

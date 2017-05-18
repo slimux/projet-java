@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.FXMLFormulaireController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="180.0" layoutY="47.0" prefHeight="20.0" prefWidth="154.0" style="-fx-background-color: #263968;" text="FORMULAIRE" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="70.0" layoutY="133.0" prefHeight="167.0" prefWidth="361.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="154.0" text="Email" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="154.0" text="Mot de passe" underline="true" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="154.0" text="Titre " underline="true" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="email" GridPane.columnIndex="1" />
+            <TextField fx:id="mdp" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="titre" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="70.0" layoutY="329.0" prefHeight="20.0" prefWidth="154.0" text="Description " underline="true">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="description" layoutX="250.0" layoutY="339.0" prefHeight="127.0" prefWidth="203.0" />
+      <Button fx:id="btm_sendMail" layoutX="286.0" layoutY="516.0" mnemonicParsing="false" onAction="#btm_sendMail" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #263968;" text="confirmer" textFill="WHITE" />
+      <Button layoutX="147.0" layoutY="516.0" mnemonicParsing="false" onAction="#GotoClient" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #263968;" text="fermer" textFill="WHITE" />
+   </children>
+</AnchorPane>
